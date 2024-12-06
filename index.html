@@ -2,186 +2,189 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initialv-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <main>
-    <header>
-        <div class="logo">
-        <h1 class="mylogo">My Logo</h1>
+    <div class="navbar">
+        <h1 class="logo">My Logo</h1>
+        <div class="pc-hide ham-menu" id="hamMenu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>   
+        <img src="./Assets/Icon - Menu.png" alt="menu icon" class="menu">
+        <div class="navbar-links">
+            <a href="#work-section" class="navbar-link">Portfolio</a>
+            <a href="#about" class="navbar-link">About</a>
+            <a href="#contact" class="navbar-link">Contact</a>
         </div>
-        <img class="imagemenuicon" src="Assets\Icon - Menu.png" alt="menu icon">
-    </header>
-
-    <section class="headliner">
-        <h2 class="headlinertext"> I'm Ahmed Waheed.<br> Glad to see you!</h2>
-        <div class="text5">
-             <p class="text1">I'm a software developer! I can help you build a product , feature or website Look through
-                  some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-        </div>
-        <p class="p2">LET'S CONNECT</p>
-        <div class="scmedialogo">
-            <ul class="socialmedialogos">
-                <li><img src="Assets/Vector-1.png" alt="logo"></li>
-                <li><img src="Assets/Vector.png" alt="logo"></li>
-                <li><img src="Assets/Linkedin icon.png" alt="logo"></li>
-                <li><img src="Assets/G.png" alt="logo"></li>
-                <li><img src="Assets/T.png" alt="logo"></li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="MainSection">
-        <div class="row-one">
-            <div class="itemcard">
-            <img class=portfolio_image src="Assets/Snapshoot Portfolio.png" alt="Portfolio image">
-                <div class="itemcontent">
-                <p class="t1">Tonic</p>
-                <ul class="list1">
-                    <li class="Canopy">CANOPY</li>
-                    <li>Back End Dev</li>
-                    <li>2015</li>
-                </ul>
-                <p class="para1">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                <ul class="list2">
-                    <li class="language">HTML</li>
-                    <li class="language">CSS</li>
-                    <li class="language">JavaScript</li>
-                </ul>
-                <button class="bt1" >See project</button>
+    </div>
+    <div class="HeadLine">
+        <h1 class="intro">I'm Ahmad Waheed. Glad to see you!</h1>
+        <p class="para">I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+        <h3 class="connect">Let's Connect</h3>
+        <img src="./Assets/social media icons.png" alt="Social Media Icons" class="lets-connect">
+    </div>
+    <div id="work-section" class="worksection">
+        <div class="memo">
+            <div class="img">
+                <img class="mob-hide" src="./Assets/S1.png" alt="memo1">
+                <img class="pc-hide" src="./Assets/1.png" alt="memo1">
+            </div>
+            <div class="AboutCard">
+                <h1>Tonic</h1>
+                <div class="techs">
+                    <h3 class="tech-item no-margin">Canopy</h3>
+                    <img src="./Assets/Counter.png" alt="">
+                    <h3 class="tech-item">Back End Dev</h3>
+                    <img src="./Assets/Counter.png" alt="">
+                    <h3 class="tech-item">2015</h3>
                 </div>
+                <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+             <ul>
+                        <li class="lang-list"><a href="https://html.spec.whatwg.org/multipage/">HTML</a></li>
+                        <li class="lang-list margin"><a href="https://devdocs.io/css/">CSS</a></li>
+                        <li class="lang-list margin"><a href="https://devdocs.io/javascript/">Javascript</a></li>
+                        <li  class="mob-hide lang-list margin"><a href="https://guides.rubyonrails.org/">Ruby on rails</a></li>
+                    </ul>
+                <button class="project">See Project</button>
             </div>
         </div>
-        <div class="row-two">
-            <div class="itemcard2">
-                <img class=portfolio_image src="Assets/portfolio img 2.png" alt="Portfolio image">
-                <div class="itemcontent">
-                    <p class="t1">Multi-Post Stories</p>
-                    <ul class="list1">
-                        <li class="Canopy">CANOPY</li>
-                        <li>Back End Dev</li>
-                        <li>2015</li>
-                    </ul>
-                    <p class="para1">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                    <ul class="list2">
-                        <li class="language">HTML</li>
-                        <li class="language">CSS</li>
-                        <li class="language">JavaScript</li>
-                    </ul>
-                    <button class="bt1" >See project</button>
+        <div class="memo reverse-memo">
+            <div class="img">
+                <img class="mob-hide" src="./Assets/4.png" alt="memo2">
+                <img class="pc-hide" src="./Assets/2.png" alt="memo2">
+            </div>
+            <div class="AboutCard">
+                <h1 class="pc-hide">Multi Post Stories</h1>
+                <h1 class="mob-hide">Multi Post Stories</h1>
+                <div class="techs">
+                    <h3 class="tech-item no-margin mob-hide">Facebook</h3>
+                    <h3 class="tech-item no-margin pc-hide">Canopy</h3>
+                    <img src="./Assets/Counter.png" alt="">
+                    <h3 class="tech-item pc-hide">Back End Dev</h3>
+                    <h3 class="tech-item mob-hide">Full Stack Dev</h3>
+                    <img src="./Assets/Counter.png" alt="">
+                    <h3 class="tech-item">2015</h3>
                 </div>
+                <p class="pc-hide">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                <p class="mob-hide">Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
+                 <ul>
+                        <li class="lang-list"><a href="https://html.spec.whatwg.org/multipage/">HTML</a></li>
+                        <li class="lang-list margin"><a href="https://devdocs.io/css/">CSS</a></li>
+                        <li class="lang-list margin"><a href="https://devdocs.io/javascript/">Javascript</a></li>
+                        <li  class="mob-hide lang-list margin"><a href="https://guides.rubyonrails.org/">Ruby on rails</a></li>
+                    </ul>
+                <button class="project">See Project</button>
             </div>
         </div>
-        <div class="row-three">
-            <div class="itemcard">
-                <img class=portfolio_image src="Assets/Snapshoot Portfolio 3.png" alt="Portfolio image">
-                <div class="itemcontent">
-                    <p class="t1">Tonic</p>
-                    <ul class="list1">
-                        <li class="Canopy">CANOPY</li>
-                        <li>Back End Dev</li>
-                        <li>2015</li>
-                    </ul>
-                    <p class="para1">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>  
-                    <ul class="list2">
-                        <li class="language">HTML</li>
-                        <li class="language">CSS</li>
-                        <li class="language">JavaScript</li>
-                    </ul>
-                    <button class="bt1" >See project</button>
+        <div class="memo">
+            <div class="img">
+                <img class="mob-hide" src="./Assets/1.png" alt="memo3">
+                <img class="pc-hide" src="./Assets/3.png" alt="memo3">
+            </div>
+            <div class="AboutCard">
+                <h1 class="pc-hide">Tonic</h1>
+                <h1 class="mob-hide">Facebook 360</h1>
+                <div class="techs">
+                    <h3 class="tech-item no-margin mob-hide">Facebook</h3>
+                    <h3 class="tech-item no-margin pc-hide">Canopy</h3>
+                    <img src="./Assets/Counter.png" alt="">
+                    <h3 class="tech-item pc-hide">Back End Dev</h3>
+                    <h3 class="tech-item mob-hide">Full Stack Dev</h3>
+                    <img src="./Assets/Counter.png" alt="">
+                    <h3 class="tech-item">2015</h3>
                 </div>
+                <p class="pc-hide">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                <p class="mob-hide">Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
+                 <ul>
+                        <li class="lang-list"><a href="https://html.spec.whatwg.org/multipage/">HTML</a></li>
+                        <li class="lang-list margin"><a href="https://devdocs.io/css/">CSS</a></li>
+                        <li class="lang-list margin"><a href="https://devdocs.io/javascript/">Javascript</a></li>
+                        <li  class="mob-hide lang-list margin"><a href="https://guides.rubyonrails.org/">Ruby on rails</a></li>
+                    </ul>
+                <button class="project">See Project</button>
             </div>
         </div>
-        <div class="row-four">
-            <div class="itemcard2">
-                <img class=portfolio_image src="Assets/Snapshoot Portfolio 4.png" alt="Portfolio image">
-                <div class="itemcontent">            
-                    <p class="t1">Multi-Post Stories</p>
-                    <ul class="list1">
-                        <li class="Canopy">CANOPY</li>
-                        <li>Back End Dev</li>
-                        <li>2015</li>
+        </div>
+        <div class="memo reverse-memo">
+            <div class="img">
+                <img class="mob-hide" src="./Assets/2.png" alt="memo4">
+                <img class="pc-hide" src="./Assets/4.png" alt="memo4">
+            </div>
+            <div class="AboutCard">
+                <h1 class="mob-hide">Uber Navigation</h1>
+                <h1 class="pc-hide">Multi Post Stories</h1>
+                <div class="techs">
+                    <h3 class="tech-item no-margin pc-hide">Canopy</h3>
+                    <h3 class="tech-item no-margin mob-hide">Uber</h3>
+                    <img src="./Assets/Counter.png" alt="">
+                    <h3 class="tech-item pc-hide">Back End Dev</h3>
+                    <h3 class="tech-item mob-hide">Lead Developer</h3>
+                    <img src="./Assets/Counter.png" alt="">
+                    <h3 class="tech-item">2015</h3>
+                </div>
+                <p class="pc-hide">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                <p class="mob-hide">A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
+                  <ul>
+                        <li class="lang-list"><a href="https://html.spec.whatwg.org/multipage/">HTML</a></li>
+                        <li class="lang-list margin"><a href="https://devdocs.io/css/">CSS</a></li>
+                        <li class="lang-list margin"><a href="https://devdocs.io/javascript/">Javascript</a></li>
+                        <li  class="mob-hide lang-list margin"><a href="https://guides.rubyonrails.org/">Ruby on rails</a></li>
                     </ul>
-                    <p class="para1">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                    <ul class="list2">
-                        <li class="language">HTML</li>
-                        <li class="language">CSS</li>
-                        <li class="language">JavaScript</li>
-                    </ul>
-                    <button class="bt1" >See project</button>
-                </div>
+                <button class="project">See Project</button>
             </div>
         </div>
-    </section>
-
-    <section class = "aboutUS">
-        <div class="about">
-            <h2 class="aboutMyselftext"> About Myself</h2>
-            <div class="aboutMyselflinertext">
-                <p >Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience!
-                    If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-            </div>
-            <p class="p21">LET'S CONNECT</p>
-            <div class="scmedialogo2">
-                <ul class="socialmedialogos">
-                    <li><img src="Assets/Vector-1.png" alt="logo"></li>
-                    <li><img src="Assets/Vector.png" alt="logo"></li>
-                    <li><img src="Assets/Linkedin icon.png" alt="logo"></li>
-                    <li><img src="Assets/G.png" alt="logo"></li>
-                    <li><img src="Assets/T.png" alt="logo"></li>
-                </ul>
-            </div>
-            <button class="bt2" >Get my resume</button>
+    </div>
+    <div id="about" class="skills">
+        <div class="details">
+            <h1>About Myself</h1>
+            <p>Hello I'm a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
+            <h3 class="connect-skills">Let's Connect</h3>
+            <img src="./Assets/social media icons.png" alt="social media icons" class="lets-connect-skills">
+            <button class="resume" >Get my resume</button>
         </div>
-        <div class="skills">
-                <div class="langu1">
-                    <p class="l3">Languages</p>
-                    <img src="Assets/Union.png" alt="Union" class = "Union">
+        <div class="langs">
+            <div class="list-header">
+                <h3>Languages</h3>
+                <img src="./Assets/Icon - Chevron - Down - Larger.png" alt="arrow">
+            </div>
+            <div class="languages">
+                <div class="lang-item">
+                    <img src="./Assets/JavaScript.png" alt="">
+                    <h3>Javascript</h3>
                 </div>
-                <div class="JS">
-                    <div class="codinglanguages">
-                        <img src="Assets/JavaScript.png" alt="js">
-                        <p class="codingtext">JavaScript</p>
-                    </div>
-                    <div class="codinglanguages">
-                        <img src="Assets/Ellipse 1.png" alt="Html">
-                        <p class="codingtext">HTML</p>
-                    </div>
-                    <div class="codinglanguages">
-                        <img src="Assets/CSS.png" alt="css">
-                        <p class="codingtext">CSS</p>
-                    </div>
+                <div class="lang-item">
+                    <img src="./Assets/Ellipse.png" alt="">
+                    <h3>HTML</h3>
                 </div>
-                <div class="langu1">
-                    <p class="l3">Framework</p>
-                    <img src="Assets/Union.png" alt="Union" class = "Union">
+                <div class="lang-item">
+                    <img src="./Assets/CSS.png" alt="">
+                    <h3>CSS</h3>
                 </div>
-                <div><hr></div>
-                <div class="langu1">
-                        <p class="l3">Skills</p>
-                        <img src="Assets/Union.png" alt="Union" class = "Union">
-                </div>
-                <div><hr></div>
+            </div>
+            <div class="list-header border">
+                <h3>Frameworks</h3>
+                <img src="./Assets/Icon - Chevron - Right - Larger.png" alt="arrow">
+            </div>
+            <div class="list-header border">
+                <h3>Skills</h3>
+                <img src="./Assets/Icon - Chevron - Right - Larger.png" alt="arrow">
+            </div>
         </div>
-    </section>
-
-    <footer class="forms">
-        <form class="Contactform" action="https://formspree.io/f/mwkgnlny" method="post" >
-
-    
-            <h2 class="contactheader">Contact me</h2>
-            <p class="contacttext">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
-                I’d love to help with it!</p>
-            <input class="input1" type="text" name="Name" value="Ahmad" required>
-            <input class="input1"  type="email"  name="Email" value="ahmad11@gmail.com" required>
-            <input class="input2"  type="text" value="Write your message her...">
-            <button class="bt3" >Get in touch</button>
-        
+    </div>
+    <div id="contact" class="contact-form">
+        <h1>Contact me</h1>
+        <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it!</p>
+        <form class="form" action="https://formspree.io/f/nopkoder" method="post">
+            <input class="name" name="full-name" type="text" placeholder="Ahmed" required>
+            <input class="name" name="email" type="email" placeholder="ahmed4@gmail.comp" required>
+            <textarea class="text" name="message" type="text" placeholder="Enter your message here..." required></textarea>
+            <button class="submit">Get in touch</button>
         </form>
-    </footer>
-    </main>
-
+        <div class="footer"></div>
+    </div>
 </body>
 </html>
